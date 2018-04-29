@@ -1,15 +1,11 @@
-package Part_A;
-
 import java.util.Scanner;
 
-public class TrafficLight	{
-	boolean red;
-	boolean yellow;
-	boolean green;
+public class TrafficLight {
+	static boolean red;
+	static boolean yellow;
+	static boolean green;
 	
-	boolean car;
-	
-	public void switchToGreen()	{
+	public static void switchToGreen()	{
 		
 		System.out.println("Traffic light: ");
 		
@@ -45,14 +41,14 @@ public class TrafficLight	{
 		System.out.println("green");
 		
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	public void switchToRed()	{
+	public static void switchToRed()	{
 		
 		System.out.println("Traffic light: ");
 		
@@ -103,7 +99,7 @@ public class TrafficLight	{
 		}
 	}
 	
-	public void stayGreen()	{
+	public static void stayGreen()	{
 		try {
 			Thread.sleep(200);
 		} catch (InterruptedException e) {
@@ -122,7 +118,7 @@ public class TrafficLight	{
 		}
 	}
 	
-	public void stayRed()	{
+	public static void stayRed()	{
 		try {
 			Thread.sleep(200);
 		} catch (InterruptedException e) {
