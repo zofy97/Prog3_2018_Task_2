@@ -1,4 +1,9 @@
-import java.util.EventListener;
+package Crossing;
+
+/**
+ * @Sophie Schauer s0559289
+ * This class gets input from the console, and communicates with the sensor.
+ */
 
 public class TrafficLightListener implements InputEventListener {
     Crossing cross = new Crossing();

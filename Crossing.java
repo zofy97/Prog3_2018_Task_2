@@ -1,4 +1,10 @@
+package Crossing;
+
+/**
+ * @Sophie Schauer s0559289
+ * This class is for setting up the Trafficlight and Sensor
+ */
 public class Crossing {
-    TrafficLight t1 = new TrafficLight();
-    Sensor s1 = new Sensor();
+    public TrafficLight t1 = new TrafficLight();
+    public Sensor s1 = new Sensor();
 }

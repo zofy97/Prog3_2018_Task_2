@@ -1,3 +1,9 @@
+package Crossing;
+
+/**
+ * @Sophie Schauer s0559289
+ * This class creates the event object
+ */
 public class EventObject implements java.io.Serializable{
     protected transient Object source;
     public EventObject (Object source)  {

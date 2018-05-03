@@ -1,5 +1,12 @@
+package User;
+
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * @Sophie Schauer s0559289
+ * This class implements the Observer class.
+ */
 
 public class ConsoleOutput implements Subject {
     List<Observer> observerList = new ArrayList<Observer>();
@@ -31,7 +38,11 @@ public class ConsoleOutput implements Subject {
         this.notifyAllObserver();
     }
 
-    void trafficOutput()    {
+    void output()   {
+        System.out.println("You are at a crossing.\nIs a car coming?\nyes / no");
+    }
 
+    void error()    {
+        System.out.println("invalid entry");
     }
 }

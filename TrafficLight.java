@@ -1,11 +1,17 @@
-import java.util.Scanner;
+package Crossing;
+
+/**
+ * @Sophie Schauer s0559289
+ * This class is the traffic light, which changes it's colours.
+ * The sensor invokes the appropriate method.
+ */
 
 public class TrafficLight {
 	static boolean red;
 	static boolean yellow;
 	static boolean green;
 	
-	public static void switchToGreen()	{
+	public static int switchToGreen()	{
 		
 		System.out.println("Traffic light: ");
 		
@@ -14,6 +20,7 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}	
 		
 		red = true;
@@ -24,6 +31,7 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
 		
 		red = false;
@@ -34,6 +42,7 @@ public class TrafficLight {
 			Thread.sleep(1500);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+			return -1;
 		}
 		
 		yellow = false;
@@ -45,10 +54,15 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
+
+		System.out.println();
+
+		return 0;
 	}
 	
-	public static void switchToRed()	{
+	public static int switchToRed()	{
 		
 		System.out.println("Traffic light: ");
 		
@@ -57,6 +71,7 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
 		 green = true;
 		System.out.println("green");
@@ -66,6 +81,7 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
 		
 		green = false;
@@ -77,6 +93,7 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
 		
 		yellow = false;
@@ -87,24 +104,31 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
 		
 		System.out.println("red");
 		
 		try {
-			Thread.sleep(200);
+			Thread.sleep(1500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
+
+		System.out.println();
+
+		return 0;
 	}
 	
-	public static void stayGreen()	{
+	public static int stayGreen()	{
 		try {
 			Thread.sleep(200);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
 		
 		green = true;
@@ -115,15 +139,21 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
+
+		System.out.println();
+
+		return 0;
 	}
 	
-	public static void stayRed()	{
+	public static int stayRed()	{
 		try {
 			Thread.sleep(200);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
 		
 		red = true;
@@ -134,6 +164,11 @@ public class TrafficLight {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return -1;
 		}
+
+		System.out.println();
+
+		return 0;
 	}
 }
